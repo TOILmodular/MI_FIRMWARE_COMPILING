@@ -11,7 +11,7 @@ So I found a different way to create .hex files for any of the available modules
 
 The goal of this repository is to provide enough information, so that anyone without any specific knowledge or prerequisit can follow and execute the procedure.
 
-Steps 1-3 only have to be executed once, while steps 4-xxx need to be performed for each individual module.
+Steps 1 to 3 only have to be executed once, while steps 4 to 6 need to be performed for each individual module.
 
 ## Step 1: Get the MI Source Code
 1. Navigate to the original [source code](https://github.com/pichenettes/eurorack) for all modules.
@@ -36,5 +36,14 @@ Steps 1-3 only have to be executed once, while steps 4-xxx need to be performed 
 3. Search for the line "TOOLCHAIN_PATH ?= /usr/local/arm/".
 4. Change the line by replacing the path with the one of your local folder "ARM". Do not forget to put a "/" at the end. (E.g. "TOOLCHAIN_PATH ?= /Users/John/ARM/")
 5. Navigate further to the folder "bootloader" of that module.
-6. Repeat steps 4-3 and 4-4.
+6. Repeat steps 4-2 to 4-4.
 7. You might not always find the line with the tool chain path in the makefiles for each module. In some cases, it is not specified. Then the file does not have to be changed.
+
+## Step 5: Create the Bootloader Hex File
+1. Open a terminal and navigate to the MI source code folder containing all individual module subfolders.
+2. Execute the command "make -f <MODULENAME>/bootloader/makefile hex", where <MODULENAME> needs to be replaced with the specific module folder name. E.g. for module Rings, the command would be "make -f rings/bootloader/makefile hex".
+3. Executing that command will create a new subfolder "build", if not yet existing. Inside that folder, there will be a subfolder "<MODULENAME>_bootloader". In our example with Rings, that would be folder "rings_bootloader". Inside that folder, you will find the file "<MODULENAME>_bootloader.hex".
+
+## Step 6: Create the Main Hex File
+1. In the same terminal, execute the command "make -f <MODULENAME>/makefile", where <MODULENAME> needs to be replaced with the specific module folder name. E.g. for module Rings, the command would be "make -f rings/makefile".
+2. Executing that command will create a new subfolder "<MODULENAME>" in the folder "build", created in the previous step 5-3. In our example with Rings, that would be folder "rings". Inside that folder, you will find the file "<MODULENAME>.hex".
