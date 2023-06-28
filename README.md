@@ -2,7 +2,7 @@
 ## Introduction
 This repository is meant to help anyone who would like to build their own Mutable Instruments Eurorack module clones, but does not know how to create .hex files out of the open-source firmware.
 
-NOTE! This procedure has been tested and used for MAC OS only. I cannot guarantee, if there is any issue or difference, when trying it with a Windows or Linux OS system.
+NOTE! This procedure has been tested and used for MAC OS only. I cannot guarantee, if there is any issue or difference, when trying it with a Windows or Linux OS.
 
 Émilie Gillet (Mutable Instruments) provides details about how to install and use virtual machine tools for the procedure. 
 But from my own experience, being not really an IT nerd, it was difficult to follow that procedure only with the provided information.
