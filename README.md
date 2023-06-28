@@ -30,4 +30,11 @@ Steps 1-3 only have to be executed once, while steps 4-xxx need to be performed 
 3. Search for the line "TOOLCHAIN_PATH ?= /usr/local/arm/". (first line after the header comments)
 4. Change the line by replacing the path with the one of your local folder "ARM". Do not forget to put a "/" at the end. (E.g. "TOOLCHAIN_PATH ?= /Users/John/ARM/")
 
-## Step 4: 
+## Step 4: Adjust the Individual Module Makefiles with the Local ARM Tool Path
+1. Navigate to the source code folder for an specific module.
+2. Open the file "makefile" in a standard text editor.
+3. Search for the line "TOOLCHAIN_PATH ?= /usr/local/arm/".
+4. Change the line by replacing the path with the one of your local folder "ARM". Do not forget to put a "/" at the end. (E.g. "TOOLCHAIN_PATH ?= /Users/John/ARM/")
+5. Navigate further to the folder "bootloader" of that module.
+6. Repeat steps 4-3 and 4-4.
+7. You might not always find the line with the tool chain path in the makefiles for each module. In some cases, it is not specified. Then the file does not have to be changed.
