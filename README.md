@@ -41,9 +41,9 @@ Steps 1 to 3 only have to be executed once, while steps 4 to 6 need to be perfor
 
 ## Step 5: Create the Bootloader Hex File
 1. Open a terminal and navigate to the MI source code folder containing all individual module subfolders.
-2. Execute the command "make -f <MODULENAME>/bootloader/makefile hex", where <MODULENAME> needs to be replaced with the specific module folder name. E.g. for module Rings, the command would be "make -f rings/bootloader/makefile hex".
-3. Executing that command will create a new subfolder "build", if not yet existing. Inside that folder, there will be a subfolder "<MODULENAME>_bootloader". In our example with Rings, that would be folder "rings_bootloader". Inside that folder, you will find the file "<MODULENAME>_bootloader.hex".
+2. Execute the command "make -f < MODULENAME >/bootloader/makefile hex", where < MODULENAME > needs to be replaced with the specific module folder name. E.g. for module Rings, the command would be "make -f rings/bootloader/makefile hex".
+3. Executing that command will create a new subfolder "build", if not yet existing. Inside that folder, there will be a folder "< MODULENAME >_bootloader". In our example with Rings, that would be folder "rings_bootloader". Inside that folder, you will find the file "< MODULENAME >_bootloader.hex".
 
 ## Step 6: Create the Main Hex File
-1. In the same terminal, execute the command "make -f <MODULENAME>/makefile", where <MODULENAME> needs to be replaced with the specific module folder name. E.g. for module Rings, the command would be "make -f rings/makefile".
-2. Executing that command will create a new subfolder "<MODULENAME>" in the folder "build", created in the previous step 5-3. In our example with Rings, that would be folder "rings". Inside that folder, you will find the file "<MODULENAME>.hex".
+1. In the same terminal, execute the command "make -f < MODULENAME >/makefile", where < MODULENAME > needs to be replaced with the specific module folder name. E.g. for module Rings, the command would be "make -f rings/makefile".
+2. Executing that command will create a new subfolder "< MODULENAME >" in the folder "build", created in the previous step 5-3. In our example with Rings, that would be folder "rings". Inside that folder, you will find the file "< MODULENAME >.hex".
