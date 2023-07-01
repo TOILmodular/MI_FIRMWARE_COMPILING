@@ -18,7 +18,7 @@ Steps 1 to 3 only have to be executed once, while steps 4 to 6 need to be perfor
 2. Download the zipped code by selecting "Download ZIP" from the drop-down list of the the "Code" button.
 3. Unzip the data in a local folder of your choice.
 4. There are several subfolders in the original code, which are only links to different folders, e.g. folder "stmlib @ e3bd7c9". You will find that those folders are empty in your locally downloaded files. Navigate to those folders separately and download the content of those folders.
-5. Unzip the data in to the corresponding folders of your previously downloaded folder struture.
+5. Unzip the data into the corresponding folders of your previously downloaded folder struture.
 
 ## Step 2: Get the required ARM compilation code
 1. Download the zipped code given in this repository by selecting "Download ZIP" from the drop-down list of the the "Code" button.
