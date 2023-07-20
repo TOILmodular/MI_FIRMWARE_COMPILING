@@ -24,13 +24,13 @@ Steps 1 to 3 only have to be executed once, while steps 4 to 6 need to be perfor
 1. Download the zipped code given in this repository by selecting "Download ZIP" from the drop-down list of the the "Code" button.
 2. Unzip the data in a local folder of your choice.
 
-## Step 3: Adjust the MI Makefile with the Local ARM Tool Path
+## Step 3: Adjust the MI Makefile with the Local ARM Toolchain Path
 1. In the ARM compilation code, navigate to the folder ARM/stmlib.
 2. Open file "makefile.inc" with a standard text editor. (TextEdit)
 3. Search for the line "TOOLCHAIN_PATH ?= /usr/local/arm/". (first line after the header comments)
 4. Change the line by replacing the path with the one of your local folder "ARM". Do not forget to put a "/" at the end. (E.g. "TOOLCHAIN_PATH ?= /Users/John/ARM/")
 
-## Step 4: Adjust the Individual Module Makefiles with the Local ARM Tool Path
+## Step 4: Adjust the Individual Module Makefiles with the Local ARM Toolchain Path
 1. Navigate to the source code folder for an specific module.
 2. Open the file "makefile" in a standard text editor.
 3. Search for the line "TOOLCHAIN_PATH ?= /usr/local/arm/".
